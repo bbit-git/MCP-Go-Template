@@ -18,6 +18,14 @@ Both the `stdio` and `sse` transports are wired up in `main.go`.
 
 ## Quick start
 
+First, rename the Go module to your own path (the template ships under a
+placeholder):
+
+```sh
+go mod edit -module github.com/you/your-server
+# then update the three imports in main.go to match
+```
+
 ```sh
 # build
 make build
